@@ -10,4 +10,4 @@ Como ejercicio debes de implementar en csharp orientado a objetos los ejercicios
 
 3. Debes agregar un subfolder para cada solución. Dentro del folder debe ir el programa correspondiente, solo un programa por folder.
 
-4. Haz un pull-request por cada ejercicio resuelto. El ejercicio debe incluir comentarios para que otros alumnos puedan ver y enender el código. Si no incluye comentarios **no aceptaré el pull-request**
+4. Haz un pull-request por cada ejercicio resuelto. El ejercicio debe incluir comentarios para que otros alumnos puedan ver y entender el código. **IMPORTANTE** Si no incluye comentarios **no aceptaré el pull-request**
