@@ -2,7 +2,7 @@
 
 #### Repositorio de Ejercicios Resueltos de la materia de Programación Orientada a Objetos
 
-Como ejercicio debes de implementar en csharp orientado a objetos los ejercicios del repositorio de la clase.
+Como ejercicio debes de implementar en csharp orientado a objetos los ejercicios del repositorio de la [clase](https://github.com/mariosky/oop).
 
 1. Debes primero hacer un fork de este repositorio
 
