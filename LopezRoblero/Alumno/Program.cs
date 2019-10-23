@@ -27,6 +27,7 @@ namespace Alumno
     class Licenciatura:Alumno
     {
         //Private: Solo se pueden usar en esta clase las variables 
+        //con dicha propiedad
         private string residencias;
         private string ServicioSocial;
         //Constructor
@@ -45,7 +46,8 @@ namespace Alumno
     //Clase Posgrado que hereda de alumno
     class Posgrado:Alumno
     {
-        //Private: Solo se pueden usar en esta clase las variables 
+        //Private: Solo se pueden usar en esta clase las variables
+        //con dicha propiedad 
         private string investigacion;
         //Constructor
         //base: Manda llamar variables de la clase base(Alumno) de la cual estamos heredando
@@ -65,7 +67,7 @@ namespace Alumno
         {
             //Alumno cesar=new Alumno("Cesar",19210519);
 
-            //Crear objetos tipo licenciatura y posgrado
+            //Crear objetos de clases
             Licenciatura Cesar=new Licenciatura("Cesar Lopez",19210519,"Empresa Prime","Scotiabank");
             Posgrado Luis=new Posgrado("Luis Rodriguez",19210620,"Tecnologias");
 

@@ -32,7 +32,8 @@ namespace Musico
     //Clase bajita que hereda de musico
     class Bajista: Musico
     {
-        //Private: Solo se puede usar en esta clase
+        //Private: Solo se puede usar en esta clase las variables
+        //con dicha propiedad
         private string bajo;
         //Constructor
         //base: Manda llamar variable de la clase base(Musico) de la cual estamos heredando
@@ -54,7 +55,8 @@ namespace Musico
     //Clase baterista que hereda de musico
     class Baterista: Musico
     {
-        //Private: Solo se puede usar en esta clase
+        //Private: Solo se puede usar en esta clase las variables
+        //con dicha propiedad
         private string bateria;
         //Constructor
         //base: Manda llamar variable de la clase base(Musico) de la cual estamos heredando
@@ -76,7 +78,8 @@ namespace Musico
     //Clase guitarrista que hereda de musico
      class Guitarrista: Musico
      {
-         //Private: Solo se puede usar en esta clase
+         //Private: Solo se puede usar en esta clase las variables
+         //con dicha propiedad
          private string guitarra;
          //Constructor
         //base: Manda llamar variable de la clase base(Musico) de la cual estamos heredando
@@ -99,7 +102,7 @@ namespace Musico
     {
         static void Main(string[] args)
         {
-            //Crear objetos
+            //Crear objetos de clases
             Musico cesar=new Musico("Cesar");
             Bajista Humberto=new Bajista("Humberto","Gibson");
             Guitarrista Lopez=new Guitarrista("Lopez","Fender");
