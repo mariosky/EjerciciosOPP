@@ -38,6 +38,22 @@ namespace Musico
             return base.Saluda()+" y soy bajista";
         }
     }
+    class Baterista: Musico
+    {
+        private string bateria;
+        public Baterista(string no,string bateria):base(no)
+        {
+            this.bateria=bateria;
+        }
+        public override void Afina()
+        {
+            Console.WriteLine("{0} Acomodando su bateria {1}",nombre,bateria);
+        }
+        public override string Saluda()
+        {
+          return base.Saluda()+" y soy baterista";
+        }
+    }
      class Guitarrista: Musico
      {
          private string guitarra;
@@ -60,7 +76,8 @@ namespace Musico
         {
             Musico cesar=new Musico("Cesar");
             Bajista Humberto=new Bajista("Humberto","Gibson");
-            Guitarrista Lopez=new Guitarrista("Lopez","Gibson");
+            Guitarrista Lopez=new Guitarrista("Lopez","Fender");
+            Guitarrista Roblero=new Baterista("Roblero","Pearl");
 
             /*cesar.Saluda();
             cesar.Afina();
