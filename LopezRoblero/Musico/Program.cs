@@ -77,7 +77,7 @@ namespace Musico
             Musico cesar=new Musico("Cesar");
             Bajista Humberto=new Bajista("Humberto","Gibson");
             Guitarrista Lopez=new Guitarrista("Lopez","Fender");
-            Guitarrista Roblero=new Baterista("Roblero","Pearl");
+            Baterista Roblero=new Baterista("Roblero","Pearl");
 
             /*cesar.Saluda();
             cesar.Afina();
@@ -88,6 +88,7 @@ namespace Musico
             grupo.Add(cesar);
             grupo.Add(Humberto);
             grupo.Add(Lopez);
+            grupo.Add(Roblero);
             foreach(Musico m in grupo)
             {
                 Console.WriteLine(m.Saluda());
