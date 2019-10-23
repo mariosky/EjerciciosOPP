@@ -17,7 +17,6 @@ namespace Alumno
         {
             Console.WriteLine("Hola, soy {0} , mi numero de control es: {1} ",Nombre,NumControl);
         }
-
     }
     class Licenciatura:Alumno
     {
@@ -30,11 +29,7 @@ namespace Alumno
         }
         public new void Presentacion()
         {
-            Console.WriteLine("Hola, soy {0} y soy alumno de licenciatura , mi numero de control es: {1}",Nombre,NumControl);
-        }
-        public void imprimeResSer()
-        {
-             Console.WriteLine("Hago mis residencias en {0} y mi servicio social en {1}",residencias,ServicioSocial);
+            Console.WriteLine("Hola, soy {0} y soy alumno de licenciatura , mi numero de control es: {1} \n Hago mis residencias en {2} y mi servicio social en {3}",Nombre,NumControl,residencias,ServicioSocial);
         }
     }
     class Posgrado:Alumno
@@ -46,30 +41,24 @@ namespace Alumno
         }
          public new void Presentacion()
         {
-         Console.WriteLine("Hola, soy {0} y soy alumno de posgrado, mi numero de control es: {1}",Nombre,NumControl);
-        }
-        public void imprimeInv()
-        {
-            Console.WriteLine("Realizo una investigacion sobre {0}",investigacion);
+         Console.WriteLine("Hola, soy {0} y soy alumno de posgrado, mi numero de control es: {1} \n Realizo una investigacion sobre {2}",Nombre,NumControl,investigacion);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Alumno cesar=new Alumno("Cesar",19210519);
-            Licenciatura humberto=new Licenciatura("Humberto",19210519,"Prime","Palacio");
-            Posgrado lopez=new Posgrado("Lopez",19210519,"Tecnologias");
+            //Alumno cesar=new Alumno("Cesar",19210519);
 
-          List<Alumno> estudiantes=new List<Alumno>();
-          estudiantes.Add(cesar);
-          estudiantes.Add(lopez);
-          estudiantes.Add(humberto);
-          foreach(Alumno A in estudiantes)
-          {
-              A.Presentacion();
+            Licenciatura Cesar=new Licenciatura("Cesar Lopez",19210519,"Empresa Prime","Scotiabank");
+            Posgrado Luis=new Posgrado("Luis Rodriguez",19210620,"Tecnologias");
 
-          }
+            Cesar.Presentacion();
+            
+            Luis.Presentacion();
+
+            
+
         }
     }
 }
