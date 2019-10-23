@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Alumno
 {
@@ -12,9 +13,9 @@ namespace Alumno
             Nombre=n;
             NumControl=NC;
         }
-        public virtual string Presentacion()
+        public void Presentacion()
         {
-            return string.Format("Hola, soy {0} , mi numero de control es: {1} ",Nombre,NumControl);
+            Console.WriteLine("Hola, soy {0} , mi numero de control es: {1} ",Nombre,NumControl);
         }
 
     }
@@ -27,28 +28,48 @@ namespace Alumno
             residencias=r;
             ServicioSocial=sc;
         }
-        public override string Presentacion()
+        public new void Presentacion()
         {
-        return base.Presentacion()+" y soy alumno de licenciatura";
+            Console.WriteLine("Hola, soy {0} y soy alumno de licenciatura , mi numero de control es: {1}",Nombre,NumControl);
         }
-        /*public void serre()
+        public void imprimeResSer()
         {
-            Console.WriteLine("Hago mis residencias en {0} y mi servicio social en {1}",residencias,ServicioSocial);
-        } */
-        
+             Console.WriteLine("Hago mis residencias en {0} y mi servicio social en {1}",residencias,ServicioSocial);
+        }
     }
-
+    class Posgrado:Alumno
+    {
+        private string investigacion;
+        public Posgrado(string no, int nc, string i):base(no,nc)
+        {
+            investigacion=i;
+        }
+         public new void Presentacion()
+        {
+         Console.WriteLine("Hola, soy {0} y soy alumno de posgrado, mi numero de control es: {1}",Nombre,NumControl);
+        }
+        public void imprimeInv()
+        {
+            Console.WriteLine("Realizo una investigacion sobre {0}",investigacion);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
             Alumno cesar=new Alumno("Cesar",19210519);
-            Licenciatura humberto=new Licenciatura("Humberto",19210519,"hola","BEBE");
+            Licenciatura humberto=new Licenciatura("Humberto",19210519,"Prime","Palacio");
+            Posgrado lopez=new Posgrado("Lopez",19210519,"Tecnologias");
 
-            Console.WriteLine(cesar.Presentacion());
-            Console.WriteLine(humberto.Presentacion());
-            humberto.SerYres();
+          List<Alumno> estudiantes=new List<Alumno>();
+          estudiantes.Add(cesar);
+          estudiantes.Add(lopez);
+          estudiantes.Add(humberto);
+          foreach(Alumno A in estudiantes)
+          {
+              A.Presentacion();
 
+          }
         }
     }
 }
