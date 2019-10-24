@@ -2,8 +2,10 @@
 
 namespace Duracion
 {
+    //Clase duracion
     class Duracion
     {
+        //Variables publicas
        public  int Horas;
        public int Minutos;
        public int Segundos;
@@ -15,7 +17,7 @@ namespace Duracion
             this.Segundos=S;
             this.Minutos=M;
         }
-         //Metodo para imprimir hrs, min y seg
+         //Metodo para imprimir duracion en formato HH:MM:SS
         public void imprimeHMS()
        {
         Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos, Segundos);
@@ -44,7 +46,7 @@ namespace Duracion
             Minutos=(int)(S-(Horas*3600))/60;
             Segundos=(int)S-(Horas*3600)-(Minutos*60);
         }
-        //Imprimir de seg a Hrs, min y seg
+        //Imprimir conversion de segundos a formato HH:MM:SS
         public void imprimeSaHMS()
         {
             Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
@@ -58,7 +60,7 @@ namespace Duracion
 
             return new Duracion(S);     
         }
-        //Imprimir suma
+        //Imprimir suma de duraciones en formato HH:MM:SS
         public void imprimeSuma()
         {
             Console.WriteLine("La suma es: {0}:{1}:{2} hrs",Horas,Minutos,Segundos);
@@ -70,15 +72,25 @@ namespace Duracion
         {
            //Crear objeto de la clase
            Duracion hms=new Duracion(8,30,50);
+
+           //Imprimir horas en formato HH:MM:SS
            hms.imprimeHMS();
+
+           //Imprimir conversiones a segundos y minutos
            hms.conversionSeg();
            hms.conversionMin();
 
+          //Crear objeto de la clase
            Duracion SaHMS=new Duracion(7000);
+
+           //Imprimir conversion de segundos a formato HH:MM:SS
            Console.WriteLine("7000 segundos equivalen a: ");
            SaHMS.imprimeSaHMS();
 
+           //Crear objeto de la clase
            Duracion Suma;
+
+           //Imprimir suma de duraciones 
            Suma=hms+SaHMS;
            Suma.imprimeSuma();
 
