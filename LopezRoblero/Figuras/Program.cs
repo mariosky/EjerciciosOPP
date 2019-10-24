@@ -5,14 +5,11 @@ namespace Figuras
 {
     abstract class Figura
     {
-      protected int ancho,largo;
       protected int px,py;
       protected string color;
 
-      public Figura(int a,int l,int x,int y, string c)
+      public Figura(int x,int y, string c)
       {
-           ancho=a;
-           largo=l;
            px=x;
            py=y;
            color=c;
@@ -21,7 +18,7 @@ namespace Figuras
     }
     class Rectangulo:Figura
     {
-        public Rectangulo(int a, int l,int x, int y, string c):base(a,l,x,y,c)
+        public Rectangulo(int x, int y, string c):base(x,y,c)
         {
         }
         public override void dibuja()
@@ -33,7 +30,7 @@ namespace Figuras
     {
         static void Main(string[] args)
         {
-            Rectangulo r=new Rectangulo(6,3,3,5,"Rojo");
+            Rectangulo r=new Rectangulo(3,5,"Rojo");
             r.dibuja();
 
 
