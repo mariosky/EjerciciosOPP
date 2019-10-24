@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Duracion
 {
-    class Duracion
+    class Duracion // declaramos la Clase
     {
         private int Horas;
         private int Minutos;
         private int segundos;
 
-        public Duracion (int H,int M,int S)
+        public Duracion (int H,int M,int S) // constructor que utilizaremos
         {
             Horas = H;
             Minutos = M;
@@ -18,7 +18,7 @@ namespace Duracion
         }        
         
 
-        public int Total()
+        public int Total() // el metodo para convertir de segundos  a horas minutos.
         {
             int conver = 0;
 
@@ -35,7 +35,7 @@ namespace Duracion
 
         public void print()
         {
-            Console.WriteLine(Horas + ":" + Minutos + ":" + segundos);
+            Console.WriteLine(Horas + ":" + Minutos + ":" + segundos); // metodo para sumar los minutos horas segundos
             
         }
     }
@@ -44,7 +44,7 @@ namespace Duracion
     {
         static void Main(string[] args)
         {
-            Duracion Horas = new Duracion(03, 10, 11); // 135
+            Duracion Horas = new Duracion(03, 10, 11); // 135 Asignamos los valores que tendra nuestras horas segunods y minutos
             Duracion Minutos = new Duracion(00, 20, 19); //60
             Duracion Segundos = new Duracion(0, 02, 30); // 120
 
