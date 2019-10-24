@@ -11,3 +11,4 @@
 ## Clases abstractas
 
 ### [Practica Musico Abstracto](https://github.com/CesarHLR/EjerciciosOPP/blob/master/LopezRoblero/MusicoAbstracto/Program.cs)
+### [Practica Figuras(Ilustracion)](https://github.com/CesarHLR/EjerciciosOPP/blob/master/LopezRoblero/Figuras/Program.cs)
