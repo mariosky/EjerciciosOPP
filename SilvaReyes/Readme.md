@@ -7,8 +7,8 @@
 ### b)[Domino](./Domino/Program.cs)
 
 ## 2)Herencia
-### a)Alumnos
-### b)Musicos
+### a)[Alumnos](./Alumnos/Program.cs)
+### b)[Musicos](./Musicos/Program.cs)
 
 ## 3)Clases Abstractas
 ### a)Ilustrador
