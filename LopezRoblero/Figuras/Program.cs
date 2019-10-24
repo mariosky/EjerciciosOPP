@@ -41,11 +41,16 @@ namespace Figuras
         static void Main(string[] args)
         {
             Rectangulo r=new Rectangulo(3,5,"Rojo");
-            r.dibuja();
-
             Circulo c=new Circulo(6,10,"Negro");
-            c.dibuja();
 
+            List<Figura> Fig=new List<Figura>();
+            Fig.Add(r);
+            Fig.Add(c);
+
+            foreach(Figura F in Fig)
+            {
+                F.dibuja();
+            }
 
         }
     }
