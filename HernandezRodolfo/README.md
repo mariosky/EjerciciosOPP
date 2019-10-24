@@ -1,5 +1,7 @@
-## Ejercicios Object Oriented Programming
+# Ejercicios Object Oriented Programming
 
-# Ejercicio No.1 Sobrecargado de Operadores.
+## Ejercicio No.1 Sobrecargado de Operadores.
 
+[Duracion](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Duracion/Duracion/Program.cs)
 
+[Domino](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Domino/Domino/Program.cs)
