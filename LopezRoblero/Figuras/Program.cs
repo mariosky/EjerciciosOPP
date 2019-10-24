@@ -7,35 +7,33 @@ namespace Figuras
     {
       protected int ancho,largo;
       protected int px,py;
-      protected string color_relleno,color_borde;
-      
-      public abstract void dibuja();
+      protected string color;
 
-      public Figura(int a,int l,int x,int y, string cr, string cb)
+      public Figura(int a,int l,int x,int y, string c)
       {
            ancho=a;
            largo=l;
            px=x;
            py=y;
-           color_relleno=cr;
-           color_borde=cb;
+           color=c;
       }
+      public abstract void dibuja();
     }
     class Rectangulo:Figura
     {
-        public Rectangulo(int a, int l,int x, int y, string cr, string cb):base(a,l,x,y,cr,cb)
+        public Rectangulo(int a, int l,int x, int y, string c):base(a,l,x,y,c)
         {
         }
         public override void dibuja()
         {
-            Console.WriteLine("Se dibuja en rect color{0} {1}, en x:{2} y y:{3}", color_relleno,color_borde,px,py);
+            Console.WriteLine("Se dibuja rectangulo color {0}, en x:{1} y y:{2}", color,px,py);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Rectangulo r=new Rectangulo(6,3,3,5,"Rojo","negro");
+            Rectangulo r=new Rectangulo(6,3,3,5,"Rojo");
             r.dibuja();
 
 
