@@ -41,7 +41,7 @@ namespace Musico
         {
             this.bajo=bajo;
         } 
-        //override: Es para implementar metodos de la clase base que marcamos con virtual en esta 
+        //override: Es para implementar metodos de la clase base que marcamos con abstract en esta 
         //clase derivada
         public override void Afina()
         {
@@ -64,7 +64,7 @@ namespace Musico
         {
             this.bateria=bateria;
         }
-        //override: Es para implementar metodos de la clase base que marcamos con virtual en esta 
+        //override: Es para implementar metodos de la clase base que marcamos con abstract en esta 
         //clase derivada
         public override void Afina()
         {
@@ -87,7 +87,7 @@ namespace Musico
          {
              this.guitarra=guitarra;
          }
-         //override: Es para implementar metodos de la clase base que marcamos con virtual en esta 
+         //override: Es para implementar metodos de la clase base que marcamos con abstract en esta 
         //clase derivada
          public override void Afina()
          {
