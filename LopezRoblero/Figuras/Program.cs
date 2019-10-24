@@ -63,12 +63,16 @@ namespace Figuras
         {
             //Crear objetos de clases
             Rectangulo r=new Rectangulo(3,5,"Rojo");
+            Rectangulo r2=new Rectangulo(4,7,"Azul");
+            Circulo c2=new Circulo(12,17,"Blanco");
             Circulo c=new Circulo(6,10,"Negro");
 
             //Lista de figuras
             List<Figura> Fig=new List<Figura>();
             Fig.Add(r);
+            Fig.Add(r2);
             Fig.Add(c);
+            Fig.Add(c2);
 
             //Estructura repetitiva
             foreach(Figura F in Fig)
