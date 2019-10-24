@@ -25,19 +25,20 @@ namespace Figuras
     {
         public Rectangulo(int a, int l,int x, int y, string cr, string cb):base(a,l,x,y,cr,cb)
         {
-
         }
         public override void dibuja()
         {
-            Console.WriteLine("Se dibuja en rect color{0}, en x:{1} y y:{2}", color_relleno,px,py);
+            Console.WriteLine("Se dibuja en rect color{0} {1}, en x:{2} y y:{3}", color_relleno,color_borde,px,py);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            List<Figura>Figuras=new List<Figura>(); 
-            Figuras.Add(new Rectangulo)
+            Rectangulo r=new Rectangulo(6,3,3,5,"Rojo","negro");
+            r.dibuja();
+
+
         }
     }
 }
