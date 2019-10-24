@@ -11,5 +11,5 @@
 ### b)[Musicos](./Musicos/Program.cs)
 
 ## 3)Clases Abstractas
-### a)Ilustrador
-### b)Músicos Abstractos
+### a)[Ilustrador](./Ilustrador/Program.cs)
+### b)[Músicos Abstractos](./Músicos Abstractos/Program.cs)
