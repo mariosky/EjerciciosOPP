@@ -22,6 +22,7 @@ namespace Alumnos
         public Licenciatura(string nombre, string no_control):base(nombre,no_control){
             this.Li=Li;
         }
+        //override para agregar datos al metodo
         public override string Datos_Alumno(){
             return base.Datos_Alumno()+", hago servicio social y recidencia ";
         }    
@@ -35,7 +36,7 @@ namespace Alumnos
         }
         //override para agregar datos al metodo
         public override string Datos_Alumno(){
-            return base.Datos_Alumno()+", tengo un tema de investigacion ";
+            return base.Datos_Alumno()+", tengo un tema de investigación ";
         }  
     }
     class Program
