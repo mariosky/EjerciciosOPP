@@ -9,3 +9,5 @@
 ## Ejercicio No.2 Herencia
 
 [Musicos](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Herencia/Herencia/Program.cs)
+
+[Alumnos](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Alumnos/Program.cs)
