@@ -85,12 +85,22 @@ namespace Musico_abstracto
             Guitarrista jose=new Guitarrista("Jose","Gibson");
             Baterista baker=new Baterista("Baker","Gretsch");
 
-            flea.Saluda();
+            /*flea.Saluda();
             flea.Afina();
             jose.Saluda();
             jose.Afina();
             baker.Saluda();
-            baker.Afina();
+            baker.Afina();*/
+            //Lista 
+            List <Musico> grupo=new List<Musico>();
+            grupo.Add(flea);
+            grupo.Add(jose);
+            grupo.Add(baker);
+            foreach(Musico m in grupo)
+            {
+                m.Saluda();
+                m.Afina();
+            }
         }
     }
 }
