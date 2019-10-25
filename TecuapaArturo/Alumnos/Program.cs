@@ -2,7 +2,7 @@
 
 namespace Alumnos
 {
-    class Alumnos{{
+    class Alumnos{
         protected string nombre;
         protected string no_control;
         //constructor
@@ -19,11 +19,11 @@ namespace Alumnos
     class Licenciatura:Alumnos{
         private string Li;
         //cosntructor
-        public Licenciatira(string nombre, string no_control):base(nombre,no_control){
+        public Licenciatura(string nombre, string no_control):base(nombre,no_control){
             this.Li=Li;
         }
-        public override string datos_alumno(){
-            return base.datos_alumno()+", hago servicio social y recidencia ";
+        public override string Datos_Alumno(){
+            return base.Datos_Alumno()+", hago servicio social y recidencia ";
         }    
     }
     //clase heredada
@@ -34,15 +34,21 @@ namespace Alumnos
                 this.pos=pos;
         }
         //override para agregar datos al metodo
-        public override string datos_alumno(){
-            return base.datos_alumno()+", tengo un tema de investigacion ";
+        public override string Datos_Alumno(){
+            return base.Datos_Alumno()+", tengo un tema de investigacion ";
         }  
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //crear nuevos objetos en cada clase
+            Licenciatura p= new Licenciatura("Jose","12345");
+            Posgrado l= new Posgrado ("Javier","01231");
+            //imprimir
+            Console.WriteLine(p.Datos_Alumno());
+            Console.WriteLine(l.Datos_Alumno());
+          
         }
     }
 }
