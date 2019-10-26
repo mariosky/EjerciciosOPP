@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace FaceClon
 {
     abstract class Publicacion{
@@ -52,10 +52,19 @@ namespace FaceClon
             foto f= new foto("12/10/14","Que bueno que esten bien","Me asombra");
             Estado e=new Estado("21/03/19","Que cool foto","Me divierte");
             Link l=new Link("31/10/19","Que buen disfraz de hallowin!!!!","Me encanta");
-            f.imprime();
+            /*f.imprime();
             e.imprime();
-            l.imprime();
-            
+            l.imprime();*/
+            //imprimir en forma de lista
+            List<Publicacion> o = new List<Publicacion>();
+            o.Add(f);
+            o.Add(e);
+            o.Add(l);
+            foreach(Publicacion p in o)
+            {
+                Console.WriteLine("************");
+                p.imprime();
+            }
         }
     }
 }
