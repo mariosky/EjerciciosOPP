@@ -49,6 +49,7 @@ namespace FaceClon
     {
         static void Main(string[] args)
         {
+            //crear nuevos objetos en cada clase
             foto f= new foto("12/10/14","Que bueno que esten bien","Me asombra");
             Estado e=new Estado("21/03/19","Que cool foto","Me divierte");
             Link l=new Link("31/10/19","Que buen disfraz de hallowin!!!!","Me encanta");
