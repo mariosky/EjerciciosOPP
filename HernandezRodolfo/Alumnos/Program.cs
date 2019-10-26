@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+
 namespace Alumnos
 {
 
@@ -7,23 +9,24 @@ namespace Alumnos
     {
         protected string nombre;
 
-     public Alumnos(string nombre)
+     public Alumnos(string n)
     {
-        this.nombre=nombre;
+        nombre=n;
     }
 
     public virtual void Presentate()
     {
         Console.WriteLine("Hola soy {0}", nombre);
     }
-
+    }
     class Licenciatura:Alumnos
     {
+
         private string ServicioSocial;
         private string Residencias;
 
 
-        public Licenciatura(string nombre,string ServicioSocial, string Residencias):base(no)
+        public Licenciatura(string nombre,string s, string r):base(nombre)
         {
             ServicioSocial=s;
             Residencias=r;
@@ -37,12 +40,14 @@ namespace Alumnos
 
 
     }
+    
+    
  class Posgrado:Alumnos
     {
         private string Investigacion;
 
 
-        public Posgrado(string nombre,string Investigacion):base(no)
+        public Posgrado(string nombre,string P):base(nombre)
         {
           Investigacion=P;
 
@@ -59,15 +64,14 @@ namespace Alumnos
 
         
 
-    }
+    
 
-   
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Alumnos Rodo= new Alumnos("Rodolfo Hernandez");
-            Licenciatura Rodolfo= new Licenciatura("Rodolfo", "Cruz Roja ","Eco Comercializadora");
+            Licenciatura  Rodolfo= new Licenciatura("Rodolfo", "Cruz Roja ","Eco Comercializadora");
             Posgrado Ivan = new Posgrado("Ivan Hernandez","Inteligencia Artificial");
 
 
