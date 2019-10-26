@@ -11,3 +11,7 @@
 [Musicos](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Herencia/Herencia/Program.cs)
 
 [Alumnos](https://github.com/Rodolfo-hernandez1/EjerciciosOPP/blob/master/HernandezRodolfo/Alumnos/Program.cs)
+
+## Ejercicio No. 3 Clases Abstractas
+
+[FaceClon]
