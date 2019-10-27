@@ -13,12 +13,8 @@ namespace Musico
         this.nombre=nombre;
         }
 
-        public  abstract void Saludo(){}
-        
-
-        
-
-        public abstract void Afina(){}
+        public abstract void Saludo();
+        public abstract void Afina();
 
     }
 
@@ -29,7 +25,10 @@ namespace Musico
        {
        bajo=b;
        } 
-
+       public override void  Saludo()
+       {
+           Console.WriteLine("{0} esta saludando al publico",nombre);
+       }
        public override void  Afina()
        {
            Console.WriteLine("{0} esta afinando su bajo {1}",nombre,bajo);
@@ -44,6 +43,10 @@ namespace Musico
         {
             Guitarra=g;
         }
+        public override void  Saludo()
+       {
+           Console.WriteLine("{0} esta saludando al publico",nombre);
+       }
 
         public override void Afina()
         {
@@ -61,6 +64,10 @@ namespace Musico
 
      }
 
+    public override void  Saludo()
+       {
+           Console.WriteLine("{0} esta saludando al publico",nombre);
+       }
      public override void Afina()
      {
          Console.WriteLine("{0} esta tocando los platillos de su bateria {1}",nombre,Bateria);
@@ -73,7 +80,7 @@ namespace Musico
 
         static void Main()
         {
-            Musico tom=new Musico("Tom");   // se declaran los objetos que vamos a utilizar con sus respectivos valores
+            //Musico tom=new Musico("Tom");   // se declaran los objetos que vamos a utilizar con sus respectivos valores
             Bajista flea=new Bajista("Flea","MusicMan");
             Guitarrista jason = new Guitarrista("Jason","Storm");
             Baterista Lois = new Baterista("Lois","Yamaha");
@@ -84,7 +91,7 @@ namespace Musico
           //  flea.Afina();
 
             List <Musico> grupo = new List <Musico>();
-            grupo.Add(tom);
+            //grupo.Add(tom);
             grupo.Add(flea);
             grupo.Add(jason);
             grupo.Add(Lois);
