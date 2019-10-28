@@ -126,7 +126,7 @@ namespace Musicos
 			grupo.Add(felix);
             grupo.Add(josh);
 
-            //Salida de resultados utilizando un foreach que para hasta que se impriman todoss
+            //Salida de resultados utilizando un foreach que para hasta que se impriman todosss
 			foreach(Musico m in grupo)
 			{
 				Console.WriteLine(m.Saluda());
