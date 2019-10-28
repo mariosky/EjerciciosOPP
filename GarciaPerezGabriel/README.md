@@ -13,7 +13,7 @@
  #### EVIDENCIAS:
 
 #### Sobrecargado de Operadores, ejercicios en clase (23 de Octubre)
-1. [Duracion] (https://github.com/GarciaG1/EjerciciosOPP/blob/master/GarciaPerezGabriel/Duracion/Program.cs)
+1. [Duracion](https://github.com/GarciaG1/EjerciciosOPP/blob/master/GarciaPerezGabriel/Duracion/Program.cs)
 
  ##### Herencia
 
