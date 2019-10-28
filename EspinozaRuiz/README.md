@@ -7,3 +7,7 @@
 ### [Ejercicio #2] Herencia (23 de Octubre)
 1. [Clase Alumnos](./Alumnos)
 2. [Clase Musicos](./Musicos)
+
+### [Ejercicio #3] Clases Abstractas (24 de Octubre)
+1. [Clase Figura](./Ilustrador)
+2. [Clase Musicos](./MusicosAbstractos)
