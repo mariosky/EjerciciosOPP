@@ -12,6 +12,8 @@
 
  #### EVIDENCIAS:
 
+#### Sobrecargado de Operadores, ejercicios en clase (23 de Octubre)
+1. [Duracion](https://github.com/GarciaG1/EjerciciosOPP/blob/master/GarciaPerezGabriel/Duracion/Program.cs)
 
  ##### Herencia
 
@@ -19,3 +21,4 @@
 
 ##### Clases Abstractas
 1. [Musico abstracto](https://github.com/GarciaG1/EjerciciosOPP/tree/master/GarciaPerezGabriel/Musico_abstracto)
+
