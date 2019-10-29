@@ -18,6 +18,7 @@
  ##### Herencia
 
 1. [Musico](https://github.com/GarciaG1/EjerciciosOPP/tree/master/GarciaPerezGabriel/Musico)
+2. [Alumno](https://github.com/GarciaG1/EjerciciosOPP/tree/master/GarciaPerezGabriel/Alumno)
 
 ##### Clases Abstractas
 1. [Musico abstracto](https://github.com/GarciaG1/EjerciciosOPP/tree/master/GarciaPerezGabriel/Musico_abstracto)
