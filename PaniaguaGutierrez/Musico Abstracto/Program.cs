@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MusicoAbstracto
 {
-    class Musico 
+    abstract class Musico 
     {
 
         protected string nombre;
@@ -13,21 +13,11 @@ namespace MusicoAbstracto
             nombre = n;
         }
 
-        public virtual void Saluda()
-        {
-            Console.WriteLine($"hola soy {nombre}");
-        }
+        public abstract void Saluda();
 
-        public virtual void Afina()
-        {
-            Console.WriteLine($"{nombre}, Afina su instrumento ");
-        }
+        public abstract void Afina();
 
-        public virtual void toca()
-        {
-            Console.WriteLine($"toca {nombre}\n");
-        }
-
+        public abstract void toca();
     }
 
     class Bajista:Musico
@@ -110,11 +100,15 @@ namespace MusicoAbstracto
 
         static void Main()
         {   
+            Bajista flea = new Bajista("flea", "Yamaha");
+            Guitarrista Tom = new Guitarrista("Tom", "Gibson");
+            Baterista Carlos = new Baterista("Carlos", "Yamaha");
+
+
             List<Musico> grupo = new List<Musico>();
-            grupo.Add(new Musico("Tom"));
-            grupo.Add(new Bajista("Flea", "Gibson"));
-            grupo.Add(new Guitarrista("Alfred", "Red Special"));
-            grupo.Add(new Baterista("Charly", "Yamaha"));
+            grupo.Add(flea);
+            grupo.Add(Tom);
+            grupo.Add(Carlos);
             foreach(Musico m in grupo)
             {
                 m.Saluda();
