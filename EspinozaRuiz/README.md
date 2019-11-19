@@ -12,6 +12,6 @@
 1. [Clase Figura](./Ilustrador)
 2. [Clase Musicos](./MusicosAbstractos)
 
-### [Ejercicio #4] Generics (24 de Octubre)
+### [Ejercicio #4] Generics (20 de Noviembre)
 1. [Clase Stack](./G_Stack)
 2. [Clase Cola](./G_Cola)
