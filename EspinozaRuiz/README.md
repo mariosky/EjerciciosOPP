@@ -11,3 +11,7 @@
 ### [Ejercicio #3] Clases Abstractas (24 de Octubre)
 1. [Clase Figura](./Ilustrador)
 2. [Clase Musicos](./MusicosAbstractos)
+
+### [Ejercicio #4] Generics (24 de Octubre)
+1. [Clase Stack](./G_Stack)
+2. [Clase Cola](./G_Cola)
